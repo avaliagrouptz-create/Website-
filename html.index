@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Avalia Adventure | East Africa Safaris, Kilimanjaro & Zanzibar</title>
+
+<meta name="description" content="Avalia Adventure is an East Africa DMC offering tailor-made safaris, Kilimanjaro trekking, Zanzibar holidays, honeymoon experiences and travel across Tanzania, Kenya, Uganda, Rwanda and Burundi.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#fff;
+    color:#171717;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.topbar{
+    background:#123524;
+    color:#fff;
+    font-size:12px;
+    padding:8px 0;
+}
+
+.topbar .container{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#fff;
+    border-bottom:1px solid #eee;
+}
+
+.nav{
+    min-height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-mark{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:#c9a227;
+    color:#123524;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.logo-text strong{
+    display:block;
+    color:#123524;
+    letter-spacing:2px;
+}
+
+.logo-text span{
+    display:block;
+    font-size:10px;
+    letter-spacing:3px;
+}
+
+.menu{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    font-size:14px;
+}
+
+.menu a:hover{
+    color:#b28b18;
+}
+
+.book-btn,
+.btn{
+    display:inline-block;
+    padding:13px 22px;
+    border-radius:3px;
+    font-weight:bold;
+    font-size:13px;
+    letter-spacing:.5px;
+}
+
+.book-btn{
+    background:#123524;
+    color:#fff;
+}
+
+.btn-gold{
+    background:#c9a227;
+    color:#123524;
+}
+
+.btn-light{
+    border:1px solid #fff;
+    color:#fff;
+}
+
+.mobile-button{
+    display:none;
+    border:0;
+    background:none;
+    font-size:27px;
+}
+
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    background:
+        linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.18)),
+        url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=2200&q=90")
+        center/cover;
+}
+
+.hero-content{
+    max-width:720px;
+}
+
+.eyebrow{
+    display:inline-block;
+    font-size:12px;
+    letter-spacing:3px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:clamp(45px,7vw,82px);
+    line-height:1.02;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:650px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.section{
+    padding:90px 0;
+}
+
+.section.cream{
+    background:#f5f1e7;
+}
+
+.section-title{
+    max-width:700px;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:clamp(35px,5vw,58px);
+    line-height:1.08;
+    color:#123524;
+}
+
+.section-title p{
+    margin-top:15px;
+    color:#555;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #e8e8e8;
+    overflow:hidden;
+}
+
+.card-image{
+    height:230px;
+    background-size:cover;
+    background-position:center;
+}
+
+.card-body{
+    padding:25px;
+}
+
+.card-body span{
+    font-size:11px;
+    letter-spacing:2px;
+    color:#987819;
+    font-weight:bold;
+}
+
+.card-body h3{
+    font-size:25px;
+    color:#123524;
+    margin:8px 0;
+}
+
+.card-body p{
+    color:#555;
+    margin-bottom:18px;
+}
+
+.card-body a{
+    font-weight:bold;
+    color:#123524;
+    font-size:13px;
+}
+
+.tanzania{
+    background-image:url("https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=85");
+}
+
+.kenya{
+    background-image:url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85");
+}
+
+.uganda{
+    background-image:url("https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1200&q=85");
+}
+
+.rwanda{
+    background-image:url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85");
+}
+
+.burundi{
+    background-image:url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=85");
+}
+
+.zanzibar{
+    background-image:url("https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=1200&q=85");
+}
+
+.kili{
+    background-image:url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85");
+}
+
+.experience{
+    min-height:480px;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    background:
+        linear-gradient(rgba(4,30,20,.85),rgba(4,30,20,.85)),
+        url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=2200&q=90")
+        center/cover;
+}
+
+.experience h2{
+    font-size:clamp(38px,6vw,65px);
+    line-height:1.05;
+    margin-bottom:20px;
+}
+
+.experience p{
+    max-width:700px;
+    margin-bottom:25px;
+}
+
+.kili-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.price{
+    font-size:35px;
+    font-weight:bold;
+    color:#c9a227;
+    margin:20px 0;
+}
+
+.route{
+    padding:25px;
+    border-left:4px solid #c9a227;
+    background:#f5f1e7;
+    margin-bottom:15px;
+}
+
+.route h3{
+    color:#123524;
+}
+
+.route strong{
+    color:#987819;
+}
+
+.honeymoon{
+    background:
+        linear-gradient(rgba(18,53,36,.86),rgba(18,53,36,.86)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2200&q=90")
+        center/cover;
+    color:#fff;
+    padding:100px 0;
+}
+
+.honeymoon h2{
+    font-size:clamp(40px,6vw,68px);
+    line-height:1;
+    margin-bottom:20px;
+}
+
+.honeymoon p{
+    max-width:700px;
+    margin-bottom:25px;
+}
+
+.honeymoon-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.honeymoon-list span{
+    border:1px solid rgba(255,255,255,.5);
+    padding:9px 15px;
+}
+
+.b2b{
+    background:#f5f1e7;
+}
+
+.b2b-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.b2b h2{
+    font-size:clamp(38px,5vw,60px);
+    color:#123524;
+    line-height:1.05;
+}
+
+.b2b p{
+    color:#555;
+    margin:20px 0;
+}
+
+.contact{
+    padding:90px 0;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1.2fr;
+    gap:50px;
+}
+
+.contact h2{
+    font-size:55px;
+    color:#123524;
+    line-height:1.05;
+}
+
+.contact-info{
+    margin-top:30px;
+}
+
+.contact-info div{
+    margin-bottom:18px;
+}
+
+.contact-info span{
+    display:block;
+    font-size:11px;
+    letter-spacing:2px;
+    color:#987819;
+    font-weight:bold;
+}
+
+form{
+    background:#f5f1e7;
+    padding:35px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+label{
+    display:block;
+    font-size:12px;
+    font-weight:bold;
+    margin-bottom:7px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #d5d5d5;
+    background:#fff;
+    font:inherit;
+}
+
+textarea{
+    resize:vertical;
+}
+
+.form-submit{
+    border:0;
+    cursor:pointer;
+    width:100%;
+}
+
+footer{
+    background:#0d2419;
+    color:#fff;
+    padding:60px 0 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:35px;
+}
+
+footer h4{
+    color:#c9a227;
+    margin-bottom:15px;
+}
+
+footer a{
+    display:block;
+    margin-bottom:8px;
+    color:#ddd;
+}
+
+footer p{
+    color:#bbb;
+    max-width:350px;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.15);
+    margin-top:40px;
+    padding-top:20px;
+    display:flex;
+    justify-content:space-between;
+    color:#aaa;
+    font-size:12px;
+}
+
+.mobile-menu{
+    display:none;
+}
+
+@media(max-width:900px){
+
+    .menu,
+    header > .container > .book-btn{
+        display:none;
+    }
+
+    .mobile-button{
+        display:block;
+    }
+
+    .mobile-menu{
+        display:none;
+        position:absolute;
+        top:76px;
+        left:0;
+        width:100%;
+        background:#fff;
+        border-top:1px solid #eee;
+        padding:20px;
+    }
+
+    .mobile-menu.show{
+        display:block;
+    }
+
+    .mobile-menu a{
+        display:block;
+        padding:13px 5%;
+        border-bottom:1px solid #eee;
+    }
+
+    .grid,
+    .kili-box,
+    .b2b-grid,
+    .contact-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+    .topbar .container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero{
+        min-height:600px;
+    }
+
+    .section{
+        padding:65px 0;
+    }
+
+    .copyright{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+<div class="container">
+
+<span>East Africa DMC</span>
+
+<span>When Wild Calls Your Name</span>
+
+<span>Tanzania • Kenya • Uganda • Rwanda • Burundi</span>
+
+</div>
+
+</div>
+
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container nav">
+
+<a href="#home" class="logo">
+
+<div class="logo-mark">
+AA
+</div>
+
+<div class="logo-text">
+
+<strong>AVALIA</strong>
+
+<span>ADVENTURE</span>
+
+</div>
+
+</a>
+
+
+<nav class="menu">
+
+<a href="#home">Home</a>
+<a href="#safaris">Safaris</a>
+<a href="#destinations">Destinations</a>
+<a href="#kilimanjaro">Kilimanjaro</a>
+<a href="#zanzibar">Zanzibar</a>
+<a href="#honeymoon">Honeymoon</a>
+<a href="#b2b">B2B</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+<a href="#contact" class="book-btn">
+BOOK NOW
+</a>
+
+
+<button class="mobile-button" onclick="toggleMenu()">
+☰
+</button>
+
+</div>
+
+
+<div class="mobile-menu" id="mobileMenu">
+
+<a href="#home" onclick="closeMenu()">Home</a>
+<a href="#safaris" onclick="closeMenu()">Safaris</a>
+<a href="#destinations" onclick="closeMenu()">Destinations</a>
+<a href="#kilimanjaro" onclick="closeMenu()">Kilimanjaro</a>
+<a href="#zanzibar" onclick="closeMenu()">Zanzibar</a>
+<a href="#honeymoon" onclick="closeMenu()">Honeymoon</a>
+<a href="#b2b" onclick="closeMenu()">B2B</a>
+<a href="#contact" onclick="closeMenu()">Contact</a>
+
+<a href="#contact" class="btn btn-gold" onclick="closeMenu()">
+BOOK NOW
+</a>
+
+</div>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-content">
+
+<span class="eyebrow">
+EAST AFRICA DMC
+</span>
+
+<h1>
+When Wild Calls Your Name.
+</h1>
+
+<p>
+Tailor-made safaris, Kilimanjaro adventures,
+Zanzibar escapes and unforgettable journeys
+across Tanzania, Kenya, Uganda, Rwanda
+and Burundi.
+</p>
+
+
+<div class="buttons">
+
+<a href="#contact" class="btn btn-gold">
+PLAN YOUR ADVENTURE
+</a>
+
+<a href="#destinations" class="btn btn-light">
+EXPLORE DESTINATIONS
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- INTRO -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<span class="eyebrow">
+AVALIA ADVENTURE
+</span>
+
+<h2>
+East Africa, designed around you.
+</h2>
+
+<p>
+We create private and tailor-made journeys
+for travellers, families, honeymooners and
+travel partners looking to experience East
+Africa with trusted local expertise.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SAFARIS -->
+
+<section class="section cream" id="safaris">
+
+<div class="container">
+
+<div class="section-title">
+
+<span class="eyebrow">
+SAFARIS
+</span>
+
+<h2>
+Wildlife journeys<br>
+worth remembering.
+</h2>
+
+<p>
+From the Serengeti and Ngorongoro to Kenya's
+iconic parks and Uganda's wildlife landscapes,
+we design safari experiences around your style,
+dates and budget.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+<div class="card">
+
+<div class="card-image tanzania"></div>
+
+<div class="card-body">
+
+<span>TANZANIA</span>
+
+<h3>
+Northern Circuit Safari
+</h3>
+
+<p>
+Tarangire • Ngorongoro • Serengeti
+</p>
+
+<a href="#contact">
+PLAN TANZANIA →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-image kenya"></div>
+
+<div class="card-body">
+
+<span>KENYA</span>
+
+<h3>
+Kenya Safari
+</h3>
+
+<p>
+Masai Mara • Amboseli • Tsavo
+</p>
+
+<a href="#contact">
+PLAN KENYA →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-image uganda"></div>
+
+<div class="card-body">
+
+<span>UGANDA</span>
+
+<h3>
+Gorilla & Wildlife
+</h3>
+
+<p>
+Bwindi • Queen Elizabeth • Kibale
+</p>
+
+<a href="#contact">
+PLAN UGANDA →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- DESTINATIONS -->
+
+<section class="section" id="destinations">
+
+<div class="container">
+
+<div class="section-title">
+
+<span class="eyebrow">
+DESTINATIONS
+</span>
+
+<h2>
+Five countries.<br>
+One East African adventure.
+</h2>
+
+</div>
+
+
+<div class="grid">
+
+<div class="card">
+
+<div class="card-image tanzania"></div>
+
+<div class="card-body">
+
+<span>01</span>
+
+<h3>Tanzania</h3>
+
+<p>
+Safari, Kilimanjaro, Zanzibar and
+authentic cultural experiences.
+</p>
+
+<a href="#contact">EXPLORE TANZANIA →</a>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-image kenya"></div>
+
+<div class="card-body">
+
+<span>02</span>
+
+<h3>Kenya</h3>
+
+<p>
+Classic safari landscapes, wildlife
+and unforgettable experiences.
+</p>
+
+<a href="#contact">EXPLORE KENYA →</a>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-image uganda"></div>
+
+<div class="card-body">
+
+<span>03</span>
+
+<h3>Uganda</h3>
+
+<p>
+Gorilla trekking, chimpanzees,
+wildlife and lush landscapes.
+</p>
+
+<a href="#contact">EXPLORE UGANDA →</a>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-image rwanda"></div>
+
+<div class="card-body">
+
+<span>04</span>
+
+<h3>Rwanda</h3>
+
+<p>
+Gorillas, Volcanoes, Akagera,
+Nyungwe and Kigali.
+</p>
+
+<a href="#contact">EXPLORE RWANDA →</a>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-image burundi"></div>
+
+<div class="card-body">
+
+<span>05</span>
+
+<h3>Burundi</h3>
+
+<p>
+Lake Tanganyika, culture, nature
+and authentic experiences.
+</p>
+
+<a href="#contact">EXPLORE BURUNDI →</a>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-image zanzibar"></div>
+
+<div class="card-body">
+
+<span>06</span>
+
+<h3>Zanzibar</h3>
+
+<p>
+Beaches, Stone Town, spices,
+diving and island escapes.
+</p>
+
+<a href="#contact">EXPLORE ZANZIBAR →</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- EXPERIENCE -->
+
+<section class="experience">
+
+<div class="container">
+
+<span class="eyebrow">
+BEYOND THE ORDINARY
+</span>
+
+<h2>
+Travel deeper.<br>
+Experience more.
+</h2>
+
+<p>
+Private safaris, cultural encounters,
+mountain trekking, beach escapes and
+romantic journeys — built around you.
+</p>
+
+<a href="#contact" class="btn btn-gold">
+START PLANNING
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- KILIMANJARO -->
+
+<section class="section" id="kilimanjaro">
+
+<div class="container">
+
+<div class="kili-box">
+
+<div>
+
+<span class="eyebrow">
+MOUNT KILIMANJARO
+</span>
+
+<h2 style="font-size:55px;line-height:1.05;color:#123524;">
+Reach the Roof<br>
+of Africa.
+</h2>
+
+<p style="margin-top:20px;color:#555;">
+Choose your route and climb Africa's highest
+mountain with an experienced professional team.
+</p>
+
+<div class="price">
+Starting From $2,000 Per Person
+</div>
+
+<a href="#contact" class="btn btn-gold">
+BOOK KILIMANJARO
+</a>
+
+</div>
+
+
+<div>
+
+<div class="route">
+
+<h3>Machame Route</h3>
+
+<strong>7 Days / 6 Nights</strong>
+
+<p>
+Alpine tents • Scenic landscapes •
+High success route.
+</p>
+
+</div>
+
+
+<div class="route">
+
+<h3>Marangu Route</h3>
+
+<strong>6 Days / 5 Nights</strong>
+
+<p>
+Mountain huts • Classic route •
+Comfortable trekking option.
+</p>
+
+</div>
+
+
+<div class="route">
+
+<h3>Lemosho Route</h3>
+
+<strong>8 Days / 7 Nights</strong>
+
+<p>
+Alpine tents • Scenic western approach •
+Excellent acclimatization.
+</p>
+
+</div>
+
+
+<div class="route">
+
+<h3>Rongai Route</h3>
+
+<strong>7 Days</strong>
+
+<p>
+Quiet northern approach • Alpine tents •
+Unique Kilimanjaro experience.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ZANZIBAR -->
+
+<section class="section cream" id="zanzibar">
+
+<div class="container">
+
+<div class="section-title">
+
+<span class="eyebrow">
+ZANZIBAR
+</span>
+
+<h2>
+Island days.<br>
+Ocean memories.
+</h2>
+
+<p>
+Slow down after safari or make Zanzibar
+the destination itself.
+</p>
+
+</div>
+
+
+<div class="grid">
+
+<div class="card">
+
+<div class="card-image zanzibar"></div>
+
+<div class="card-body">
+
+<span>BEACH</span>
+
+<h3>
+Beach Escapes
+</h3>
+
+<p>
+Relax on Zanzibar's beautiful beaches
+and enjoy private island experiences.
+</p>
+
+<a href="#contact">PLAN BEACH HOLIDAY →</a>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-image rwanda"></div>
+
+<div class="card-body">
+
+<span>CULTURE</span>
+
+<h3>
+Stone Town & Spice Tours
+</h3>
+
+<p>
+Discover history, architecture, spices,
+markets and local culture.
+</p>
+
+<a href="#contact">EXPLORE STONE TOWN →</a>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-image kenya"></div>
+
+<div class="card-body">
+
+<span>OCEAN</span>
+
+<h3>
+Diving & Snorkeling
+</h3>
+
+<p>
+Explore the Indian Ocean and discover
+Zanzibar's underwater world.
+</p>
+
+<a href="#contact">PLAN OCEAN EXPERIENCE →</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- HONEYMOON -->
+
+<section class="honeymoon" id="honeymoon">
+
+<div class="container">
+
+<span class="eyebrow">
+HONEYMOON COLLECTION
+</span>
+
+<h2>
+Your love story.<br>
+Our destination.
+</h2>
+
+<p>
+Combine safari, Kilimanjaro and Zanzibar
+into a romantic East African honeymoon,
+or create a completely private journey.
+</p>
+
+
+<div class="honeymoon-list">
+
+<span>Private Safari</span>
+<span>Luxury Lodges</span>
+<span>Zanzibar Beach</span>
+<span>Romantic Dining</span>
+<span>Sunset Experiences</span>
+
+</div>
+
+
+<a href="#contact" class="btn btn-gold">
+PLAN OUR HONEYMOON
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- B2B -->
+
+<section class="section b2b" id="b2b">
+
+<div class="container">
+
+<div class="b2b-grid">
+
+<div>
+
+<span class="eyebrow">
+TRAVEL TRADE
+</span>
+
+<h2>
+Your East Africa<br>
+DMC partner.
+</h2>
+
+</div>
+
+
+<div>
+
+<p>
+Avalia Adventure works with travel agencies,
+tour operators and travel professionals seeking
+a reliable local partner across East Africa.
+</p>
+
+<p>
+We offer tailor-made itineraries, operational
+support, competitive B2B rates and local
+destination expertise.
+</p>
+
+<a href="#contact" class="btn btn-gold">
+BECOME A PARTNER
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="contact-grid">
+
+<div>
+
+<span class="eyebrow">
+BOOK YOUR ADVENTURE
+</span>
+
+<h2>
+Let's plan something extraordinary.
+</h2>
+
+<p style="margin-top:20px;color:#555;">
+Tell us where you want to go, when you want
+to travel and what you want to experience.
+We'll design your journey.
+</p>
+
+
+<div class="contact-info">
+
+<div>
+
+<span>WHATSAPP</span>
+
+<a href="https://wa.me/255693193314"
+target="_blank">
+
++255 693 193 314
+
+</a>
+
+</div>
+
+
+<div>
+
+<span>EMAIL</span>
+
+<a href="mailto:avaliaadventure@gmail.com">
+
+avaliaadventure@gmail.com
+
+</a>
+
+</div>
+
+
+<div>
+
+<span>DESTINATIONS</span>
+
+<p>
+Tanzania • Kenya • Uganda • Rwanda • Burundi
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<form
+action="https://formsubmit.co/avaliaadventure@gmail.com"
+method="POST">
+
+<input type="hidden"
+name="_subject"
+value="New Booking Inquiry - Avalia Adventure">
+
+<input type="hidden"
+name="_captcha"
+value="false">
+
+<input type="hidden"
+name="_template"
+value="table">
+
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>
+Full Name *
+</label>
+
+<input
+type="text"
+name="name"
+placeholder="Your full name"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Email *
+</label>
+
+<input
+type="email"
+name="email"
+placeholder="your@email.com"
+required>
+
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>
+WhatsApp
+</label>
+
+<input
+type="tel"
+name="whatsapp"
+placeholder="+255...">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Travellers
+</label>
+
+<select name="travellers">
+
+<option>Select</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>
+Destination *
+</label>
+
+<select name="destination" required>
+
+<option value="">Choose destination</option>
+<option>Tanzania</option>
+<option>Kenya</option>
+<option>Uganda</option>
+<option>Rwanda</option>
+<option>Burundi</option>
+<option>Zanzibar</option>
+<option>East Africa Combination</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Experience
+</label>
+
+<select name="experience">
+
+<option>Select</option>
+<option>Safari</option>
+<option>Kilimanjaro</option>
+<option>Zanzibar Holiday</option>
+<option>Gorilla Trekking</option>
+<option>Honeymoon</option>
+<option>Family Holiday</option>
+<option>Cultural Tour</option>
+<option>Beach Holiday</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>
+Travel Date
+</label>
+
+<input
+type="date"
+name="travel_date">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Budget
+</label>
+
+<select name="budget">
+
+<option>Select</option>
+<option>Under $1,500</option>
+<option>$1,500 – $2,500</option>
+<option>$2,500 – $4,000</option>
+<option>$4,000 – $6,000</option>
+<option>$6,000+</option>
+<option>Not sure yet</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Special Occasion
+</label>
+
+<select name="occasion">
+
+<option>None</option>
+<option>Honeymoon</option>
+<option>Anniversary</option>
+<option>Birthday</option>
+<option>Family Celebration</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Tell us about your dream trip *
+</label>
+
+<textarea
+name="message"
+rows="6"
+placeholder="Tell us your preferred destinations, dates, activities, accommodation style and anything else you'd like us to know."
+required></textarea>
+
+</div>
+
+
+<button
+type="submit"
+class="btn btn-gold form-submit">
+
+SEND BOOKING REQUEST →
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<a href="#home" class="logo">
+
+<div class="logo-mark">
+AA
+</div>
+
+<div class="logo-text">
+
+<strong style="color:#fff;">
+AVALIA
+</strong>
+
+<span>
+ADVENTURE
+</span>
+
+</div>
+
+</a>
+
+<p style="margin-top:15px;">
+East Africa DMC across Tanzania,
+Kenya, Uganda, Rwanda and Burundi.
+</p>
+
+<p style="margin-top:12px;">
+When Wild Calls Your Name.
+</p>
+
+</div>
+
+
+<div>
+
+<h4>Destinations</h4>
+
+<a href="#destinations">Tanzania</a>
+<a href="#destinations">Kenya</a>
+<a href="#destinations">Uganda</a>
+<a href="#destinations">Rwanda</a>
+<a href="#destinations">Burundi</a>
+
+</div>
+
+
+<div>
+
+<h4>Experiences</h4>
+
+<a href="#safaris">Safaris</a>
+<a href="#kilimanjaro">Kilimanjaro</a>
+<a href="#zanzibar">Zanzibar</a>
+<a href="#honeymoon">Honeymoon</a>
+<a href="#b2b">B2B</a>
+
+</div>
+
+
+<div>
+
+<h4>Contact</h4>
+
+<a href="mailto:avaliaadventure@gmail.com">
+avaliaadventure@gmail.com
+</a>
+
+<a href="https://wa.me/255693193314"
+target="_blank">
++255 693 193 314
+</a>
+
+<a href="#contact">
+BOOK NOW
+</a>
+
+</div>
+
+</div>
+
+
+<div class="container copyright">
+
+<span>
+© 2026 Avalia Adventure. All rights reserved.
+</span>
+
+<span>
+When Wild Calls Your Name.
+</span>
+
+</div>
+
+</footer>
+
+
+
+<script>
+
+function toggleMenu(){
+
+    const menu =
+    document.getElementById("mobileMenu");
+
+    menu.classList.toggle("show");
+
+}
+
+function closeMenu(){
+
+    document
+    .getElementById("mobileMenu")
+    .classList.remove("show");
+
+}
+
+</script>
+
+</body>
+</html>
